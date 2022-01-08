@@ -8,7 +8,7 @@ import 'package:interview/generated/locales.g.dart';
 import '../controllers/splash_controller.dart';
 
 class SplashView extends StatelessWidget {
-  final homeController = Get.put(SplashController());
+  final splashController = Get.put(SplashController());
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +42,7 @@ class SplashView extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsetsDirectional.only(
-                  bottom: 16, start: 52, end: 52),
+              margin: EdgeInsetsDirectional.only(bottom: 16, start: 52, end: 52),
               // width: MediaQuery.of(context).size.width * 0.65,
               height: 4,
               child: LinearProgressIndicator(
